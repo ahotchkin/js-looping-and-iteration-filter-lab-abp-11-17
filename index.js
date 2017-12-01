@@ -1,11 +1,10 @@
 // Code your solution in this file
-function findMatching (drivers, '') {
-  const drivers = [];
-    for (const driver of collection) {
-        if (cb(driver)) {
-            Collection.push(driver);
-          }
-        }
-
-        return Collection;
-}
+function findMatching (drivers, name) {
+  let matchingDrivers = drivers.filter(function(driver())){
+    if name === driver{
+      return true
+    }else{
+      return false
+    }
+    }
+  }
