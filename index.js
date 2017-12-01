@@ -9,3 +9,14 @@ function findMatching(drivers, name){
   })
     return matchingDrivers;
   }
+
+function fuzzyMatch(drivers, name){
+  let matchingFirstLetters = drivers.filter(function(driver){
+    if (name[0,1] === driver[0,1]){
+      return true
+    } else {
+      return false
+    }
+  })
+  return matchingFirstLetters
+}
