@@ -7,5 +7,5 @@ function findMatching (collection, cb) {
           }
         }
 
-        return newCollection;
+        return Collection;
 }
