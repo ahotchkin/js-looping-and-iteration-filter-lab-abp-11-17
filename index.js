@@ -6,4 +6,6 @@ function findMatching (collection, cb) {
             newCollection.push(driver);
           }
         }
+
+        return newCollection;
 }
