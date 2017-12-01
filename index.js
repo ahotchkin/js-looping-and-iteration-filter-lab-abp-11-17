@@ -4,3 +4,6 @@ function findMatching (collection, cb) {
     for (const driver of collection) {
         if (cb(driver)) {
             newCollection.push(driver);
+          }
+        }
+}
