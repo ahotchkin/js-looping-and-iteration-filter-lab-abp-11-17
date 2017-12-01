@@ -22,12 +22,8 @@ function fuzzyMatch(drivers, name){
 }
 
 function matchName(drivers, name){
-  let matchingName = drivers.filter(function(driver){
-    if (name === driver){
-      return true
-    } else {
-      return false
-    }
-  })
-  return driver.name, driver.hometown
+  return drivers.filter(function(driver){
+    return driver.name.toLowerCase() === name.toLowerCase();
+  });
+  
 }
