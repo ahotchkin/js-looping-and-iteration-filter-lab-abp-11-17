@@ -1,4 +1,6 @@
 // Code your solution in this file
-drivers.filter(function findMatching(drivers)){
-  return drivers === drivers
-}
+function findMatching (collection, cb) {
+  const drivers = [];
+    for (const driver of collection) {
+        if (cb(driver)) {
+            newCollection.push(driver);
